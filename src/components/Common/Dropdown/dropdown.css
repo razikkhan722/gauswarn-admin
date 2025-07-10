@@ -1,0 +1,243 @@
+/* Container holding the dropdown filter */
+.filter-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 10px;
+  position: relative;
+}
+
+/* Button style (Last 7 Days, etc.) */
+.custom-btn {
+  background-color: #e98d6a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 14px;
+  min-width: 110px;
+  text-align: left;
+}
+
+.custom-btn:focus,
+.custom-btn:hover {
+  background-color: #d57858;
+  outline: none;
+  box-shadow: none;
+}
+
+/* Box showing date range */
+.date-display {
+  border: 1px solid #e98d6a;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #fff5e9;
+  color: #e98d6a;
+}
+
+/* Dropdown menu base */
+.main-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  display: flex;
+  background-color: transparent;
+  margin-top: 4px;
+  z-index: 10;
+}
+
+/* Monthly + Yearly buttons */
+.sub-options {
+  display: flex;
+  flex-direction: column;
+  
+  border-radius: 6px;
+  overflow: hidden;
+  width: 120px;
+}
+
+.sub-options button {
+  background-color: #e98d6a;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 14px;
+  text-align: left;
+  width: 100%;
+  border-radius: 0;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.sub-options button:hover,
+.sub-options button:focus {
+  background-color: #e98d6a;
+  outline: none;
+}
+
+/* Rounded corners only at top and bottom */
+.sub-options button:first-child {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.sub-options button:last-child {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+/* Month dropdown */
+.month-dropdown {
+  background-color: #fff7e9;
+  border: 1px solid #e98d6a;
+  border-radius: 6px;
+  padding: 6px 0;
+  width: 130px;
+  margin-left: 8px;
+}
+
+.month-dropdown label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  font-size: 14px;
+  color: #e98d6a;
+  cursor: pointer;
+}
+
+.month-dropdown input[type="checkbox"] {
+  accent-color: #e98d6a;
+  width: 14px;
+  height: 14px;
+}
+
+/* Year dropdown */
+.year-dropdown {
+  background-color: #fff7e9;
+  border: 1px solid #e98d6a;
+  border-radius: 6px;
+  padding: 6px 0;
+  width: 90px;
+  margin-left: 8px;
+}
+
+.year-dropdown div {
+  padding: 6px 12px;
+  font-size: 14px;
+  color: #e98d6a;
+  cursor: pointer;
+}
+
+.year-dropdown div:hover {
+  background-color: #ffe6d3;
+}
+
+
+/*  */
+/* --- New Style for Rajlaxmi Date Display --- */
+.rajlaxmi-date-display {
+  background-color:  #fff7e9 !important;
+  color: #5c4033 !important;
+  border: 1px solid #5c4033 !important;
+}
+
+
+/* --- New Style for Rajlaxmi Custom Button --- */
+.rajlaxmi-btn {
+  background-color: #5c4033 !important;
+  color: white !important;
+}
+
+.rajlaxmi-btn:hover {
+  background-color: #a97458 !important;
+}
+
+/* --- New Style for Rajlaxmi Dropdown items --- */
+.rajlaxmi-dropdown-btn {
+  background-color: #5c4033 !important;
+  color: white !important;
+}
+
+.rajlaxmi-dropdown-btn:hover {
+  background-color: #a97458 !important;
+}
+
+/* --- New Style for Gauswarn Year Dropdown (brown) --- */
+.rajlaxmi-year-dropdown {
+  background-color: #fff7e9;
+  border: 1px solid #5c4033;
+  border-radius: 6px;
+  padding: 6px 0;
+  width: 90px;
+  margin-left: 8px;
+}
+
+.rajlaxmi-year-dropdown div {
+  padding: 6px 12px;
+  font-size: 14px;
+  color: #5c4033;
+  cursor: pointer;
+}
+
+.rajlaxmi-year-dropdown div:hover {
+  background-color: #f5e3d1;
+}
+.month-dropdown {
+  background-color: #fff7e9;
+  border: 1px solid #5c4033 ;
+  border-radius: 6px;
+
+  padding: 6px 0;
+  width: 130px;
+  margin-left: 8px;
+  max-height: 240px;   /* 👈 shows ~3 items */
+  overflow-y: auto;    /* 👈 scroll enabled */
+}
+
+.rajlaxmi-month-dropdown {
+  background-color: #fff7e9;
+  border: 1px solid #5c4033;
+  border-radius: 6px;
+  padding: 6px 0;
+  width: 130px;
+  margin-left: 8px;
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.rajlaxmi-month-dropdown label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  font-size: 14px;
+  color: #5c4033;
+  cursor: pointer;
+}
+
+.rajlaxmi-month-dropdown label:hover {
+  background-color: #f5e3d1;
+}
+
+.rajlaxmi-month-dropdown input[type="checkbox"] {
+  accent-color: #5c4033;
+  width: 14px;
+  height: 14px;
+}
+
+
+@media (max-width: 390px) {
+  .filter-wrapper {
+    flex-direction: row;
+    justify-content: flex-start;
+  
+  }
+
+  .date-display,
+  .custom-btn {
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+}

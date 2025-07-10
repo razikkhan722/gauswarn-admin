@@ -1,0 +1,592 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+:root {
+  --light-cream-color: #fefbe9;
+  --gauswarn-light-color: #f6f0e4;
+  --red-color: #e07a5f;
+  --dark-blue-color: #131523;
+  --little-murmaid-color: #2f3e46;
+  --chinese-black-color: #111111;
+  --dark-brown-color: #5d4037;
+  --light-green-color: #c5ebaa;
+  --light-blue-color: #b5e2fa;
+  --light-purple-color: #d8bfd8;
+  --light-yellow-color: #f7d486;
+  --gray-color: #575757;
+  --dark-silver-color: #707070;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.height-100vh{
+  height: 100vh !important;
+}
+
+/* Common Background Color Css */
+.bg-light-cream-color {
+  background-color: var(--light-cream-color);
+}
+
+.gauswarn-bg-color {
+  background-color: var(--gauswarn-light-color);
+}
+
+.bg-red-color {
+  background-color: var(--red-color);
+}
+
+.bg-light-blue-color {
+  background-color: var(--light-blue-color);
+}
+
+.bg-light-yellow-color {
+  background-color: var(--light-yellow-color);
+}
+
+.bg-light-purple-color {
+  background-color: var(--light-purple-color);
+}
+
+.bg-light-green-color {
+  background-color: var(--light-green-color);
+}
+
+.bg-dark-brown-color {
+  background-color: var(--dark-brown-color);
+}
+
+/* Text Color Css */
+.text-gray-color {
+  color: var(--gray-color);
+}
+
+.text-red-color {
+  color: var(--red-color);
+}
+
+.text-drak-blue-color {
+  color: var(--dark-blue-color) !important;
+}
+
+.text-murmaid-color {
+  color: var(--little-murmaid-color) !important;
+}
+
+.text-dark-silver-color {
+  color: var(--dark-silver-color) !important;
+}
+
+/* Border Css */
+.border-orange {
+  border-left: solid 3px #e07a5f;
+  border-radius: 8px;
+}
+
+/* Box shadow */
+.box-shadow {
+  box-shadow: 0px 4px 16px 1px #0000001A;
+}
+
+
+/* 
+ ========================== 
+
+ Font Family
+
+ ==========================
+*/
+
+/* Josefin Sans: CSS class for a variable style */
+
+.josefin-sans-font-family-600 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.josefin-sans-font-family-500 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Inter: CSS class for a variable style */
+
+.inter-font-family-300 {
+  font-family: "Inter";
+  font-weight: 300;
+  font-style: normal;
+}
+
+.inter-font-family-400 {
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.inter-font-family-500 {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.inter-font-family-600 {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Font Css  */
+.font-10 {
+  font-size: 10px;
+}
+
+.font-12 {
+  font-size: 12px;
+}
+
+.font-14 {
+  font-size: 14px;
+}
+
+.font-16 {
+  font-size: 16px;
+}
+
+.font-20 {
+  font-size: 20px;
+}
+
+.font-24 {
+  font-size: 24px;
+}
+
+/* Dashboard Css */
+.dashboard-card {
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.dashboard-img-circle {
+  width: 60px;
+  height: 60px;
+}
+
+.dashboard-blue-color {
+  background: rgba(0, 119, 182, 0.1);
+}
+
+.dashboard-green-color {
+  background: rgba(107, 163, 104, 0.2);
+}
+
+.dashboard-yellow-color {
+  background: rgba(232, 106, 51, 0.2);
+}
+
+.dashboard-purple-color {
+  background: rgba(106, 13, 173, 0.1);
+}
+
+/* Recent Order Table Css */
+.table td .d-flex.flex-nowrap {
+  white-space: nowrap;
+  min-width: 120px;
+}
+
+.recent-table {
+  border-radius: 12px !important;
+}
+
+.recent-tble-header {
+  border-top-left-radius: 12px !important;
+  border-top-right-radius: 12px !important;
+}
+
+th,
+td {
+  font-size: 14px !important;
+}
+
+.status-spot {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+}
+
+.yellow-spot {
+  background-color: #ffc107;
+}
+
+.red-spot {
+  background-color: #ff4d4f;
+}
+
+.blue-spot {
+  background-color: #2196f3;
+}
+
+.green-spot {
+  background-color: #4caf50;
+}
+
+/* -------------- Customer Card Css --------------- */
+
+.customer-img img {
+  width: 80px;
+  height: 84px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.customer-card {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 991px) {
+  .customer-img img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .customer-card {
+    flex-direction: row;
+  }
+}
+
+
+
+@media (max-width: 1280px) {
+
+  .dashboard-card {
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .customer-card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .customer-img img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+  }
+
+  .customer-cards-row {
+    row-gap: 16px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .customer-card {
+    /* width: 100%; */
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+    box-sizing: border-box;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .customer-cards-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .customer-cards-row .customer-card {
+    flex: 0 0 calc(50% - 8px);
+    /* Two cards per row with gap */
+  }
+}
+
+
+/* Upload Banner */
+
+.upload-ghee-banner{
+  height: 400px;
+  /* background-color: #ffffff; */
+  /* border: 2px dashed #ccc; */
+  border-radius: 8px;
+}
+.image-ghee-banner{
+  height: 400px;
+  /* background-color: #ffffff; */
+  /* border: 2px solid #ccc; */
+  border-radius: 8px;
+}
+.banner-image-box{
+  width: 28%;
+  height: 40%;
+  position: relative;
+}
+.banner-image-box img{
+  width: 100%;
+  height: 100%;
+   object-fit: cover;
+  border-radius: 8px;
+}
+
+
+
+
+/* .dropdown-toggle::after {
+   margin-left: 100%;
+ } */
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+.page-link {
+  position: relative;
+  display: block;
+  margin: 0 5px 0 5px;
+  color: var(--little-murmaid-color) !important;
+  background-color: #fff;
+  border: none !important;
+}
+
+.page-item.active .page-link {
+  z-index: 3;
+  color: #fff !important;
+  border-radius: 12px;
+  background-color: var(--red-color);
+  border-color: var(--red-color);
+}
+
+/* Checkbox Css */
+.custom-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border: 1px solid var(--red-color);
+  border-radius: 3px;
+  cursor: pointer;
+  position: relative;
+}
+
+.custom-checkbox:checked {
+  background-color: var(--red-color);
+  border-color: var(--red-color);
+}
+
+.custom-checkbox:checked::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.eye-icon-color {
+  color: #17a2b8;
+}
+
+.edit-icon-color {
+  color: #007bff;
+}
+
+.trash-icon-color {
+  color: #DF1515;
+}
+
+.val {
+  color: #2F3E46;
+
+}
+
+/* Media Query start here */
+@media (max-width: 768px) {
+
+  /* .customer-img {
+     width: 50px !important;
+     height: 100%  !important;
+   } */
+
+}
+
+
+/* Login css start here */
+.login-container {
+  height: 100vh;
+  width: 100%;
+  background-image: url("./components/Assets/Images/Login-img/Rectangle\ 40475.svg");
+  /* Your food spice background */
+  background-size: cover;
+  background-position: center;
+  padding: 1rem;
+}
+
+/* Login Box */
+.login-box {
+  background-color: rgba(255, 255, 255, 0.15);
+  /* More transparent */
+  border-radius: 16px;
+  max-width: 550px;
+  width: 100%;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+  width: 119px;
+}
+
+.login-input .form-control {
+  background-color: #d9d9d957 !important;
+  border-radius: 4px;
+  color: white;
+}
+
+.add-btn {
+  background-color: #E07A5F1A;
+  border: 1px solid #E07A5F;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .logo {
+    width: 60px;
+  }
+}
+
+/* Graph css start */
+.graph-container {
+  border-radius: 12px !important;
+}
+
+/* FIX: Keep table height fixed and pagination position stable */
+/* .recent-table {
+  min-height: 750px; 
+  display: flex;
+  flex-direction: column;
+} */
+
+.table-responsive {
+  min-height: 500px;
+}
+
+/* .table tbody tr {
+  height: 55px;
+} */
+.empty_row {
+  height: 55px;
+}
+
+/* Logout Button Hover Backgrounds */
+.logout-btn-brown:hover {
+  background-color: #4e362f;
+  /* Slightly darker than --dark-brown-color */
+}
+
+.logout-btn-orange:hover {
+  background-color: #d7684c;
+  /* Slightly darker than --red-color */
+}
+
+/* Customer Css */
+/* .customer-card{
+width: 397px;
+} */
+/* .customer-img img {
+ width: 80px;
+ height: 84px;
+object-fit: cover;
+} */
+
+/* @media screen and (max-width: 768px) {
+  .customer-img {
+    width: 64px;
+    height: 70px;
+  }
+
+  .customer-img img {
+    width: 120%;
+    height: 100%;
+    object-fit: cover;
+  }
+} */
+/* Add Product Button Variants */
+.add-btn-gauswarn {
+  color: var(--dark-brown-color);
+  border: 1px solid var(--dark-brown-color);
+  background-color: #5d40371a;
+  /* Brown translucent background */
+}
+
+.add-btn-rajlaxmi {
+  color: var(--red-color);
+  border: 1px solid var(--red-color);
+  background-color: #e07a5f1a;
+  /* Orange translucent background */
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .customer-cards-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  .customer-cards-row .customer-card {
+    flex: 0 0 calc(50% - 8px);
+    /* Two cards per row with gap */
+  }
+}
+
+.no-data-img {
+  max-width: 280px;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+
+.text-truncate {
+  max-width: 100px;
+  /* Adjust width as needed */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+
+.no-overlay-message {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+
+/* Error Css Start Here */
+.error-img {
+  max-width: 400px;
+  width: 100%;
+}

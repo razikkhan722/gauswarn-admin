@@ -1,0 +1,28 @@
+.text-muted {
+  color: #6c757d;
+}
+
+.card {
+  background-color: #fff;
+}
+
+.text-dark {
+  color: #575757;
+  ;
+  /* Based on your --chinese-black-color */
+}
+
+.text-dark {
+  color: var(--chinese-black-color);
+}
+
+@media screen and (max-width: 768px) {
+  .chart-scroll-wrapper {
+  overflow-x: auto !important;
+  -webkit-overflow-scrolling: touch !important;
+}
+.chart-scroll-inner {
+  min-width: 500px !important;
+}
+ 
+}
